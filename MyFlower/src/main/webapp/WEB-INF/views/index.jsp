@@ -20,8 +20,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-  
-  <!-- for footer -->
+ <!--  
+  for footer
   <style>
 .social:hover {
      -webkit-transform: scale(1.1);
@@ -55,13 +55,13 @@
  #social-em:hover {
      color: #f39c12;
  }
-</style>
+</style> -->
   
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse">
+<!-- <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#"><img src="resources\images\img_flower.jpg" height="30" width="40"></a>
@@ -87,7 +87,9 @@
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
-</nav>
+</nav> -->
+
+<jsp:include page="header.jsp" />
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -150,16 +152,17 @@
   <table class="table" align="center">
 
   <tr>
-    <td > <a href="flower"><img src="resources\images\f1.jpg" /> </a></td>
-    <td ><img src="resources\images\f2.jpg" /></td>
+    <td > <a href="productDetails"><img src="resources\images\f1.jpg" /> </a></td>
+    <td ><a href="productView"><img src="resources\images\f2.jpg" /></a></td>
     <td ><img src="resources\images\f3.jpg" /></td>
   </tr>
 </table></div>
 </div>
 </center>
 </div>
+ <jsp:include page="footer.jsp" />
 
-<!-- myaddition for footer -->
+<!-- <!-- myaddition for footer 
 <div class="container">
     <hr/>
         <div class="text-left left-block">
@@ -174,7 +177,7 @@
     <hr/>
 </div>
 
-<br />
+<br /> -->
 
 
 <!--  end of my addition -->

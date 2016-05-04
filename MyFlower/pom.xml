@@ -55,8 +55,18 @@
 			<version>3.1.0</version>
 		</dependency>
 		
+		<!-- for jstl dependency -->
+        <dependency>
+   			 <groupId>javax.servlet</groupId>
+        			<artifactId>jstl</artifactId>
+       				 <version>1.2</version>
+		</dependency>
 		
-
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>jstl-api</artifactId>
+			<version>1.2</version>
+		</dependency>
     <!-- end of My Addition -->
   </dependencies>
   <build>

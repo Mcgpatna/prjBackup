@@ -1,12 +1,16 @@
 
 package controllers;
+
  
 import org.springframework.stereotype.Controller;
+
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+
+import dao.productDAOImpl;;
 
 
 @Controller
@@ -37,14 +41,21 @@ public class homeController {
 	{
 		return "signup";
 	}
-	@RequestMapping("/flower")
-	public String showFlow()
+	@RequestMapping("/productDetails")
+	public String showProduct()
 	{
-		return "flower";
+		return "productDetails";
 	}
-	/*@RequestMapping("/flw")
-	public String shop1()
+	
+	@RequestMapping("/productView")
+	public ModelAndView dispProduct()
 	{
-		return "flower";
-	}*/
+		dao.productDAOImpl prd=new dao.productDAOImpl();
+		prd.insertProduct();
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("pList",prd.viewProduct());
+		
+		
+		return mv;
+	}
 }

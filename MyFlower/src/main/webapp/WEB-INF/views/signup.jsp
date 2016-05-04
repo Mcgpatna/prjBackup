@@ -66,7 +66,7 @@ body{
 
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+<!-- <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#"><img src="resourcesimages\img_flower.jpg" height="30" width="40"></a>
@@ -88,11 +88,12 @@ body{
       <li><a href="#">Page 3</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <!--  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
-</nav>
+</nav> -->
+<jsp:include page="header.jsp" />
 <div class="container">
         <div class="row centered-form">
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
@@ -157,7 +158,7 @@ body{
     <!-- My addition for footer-->
 
 
-<div class="container" color="blue">
+<!-- <div class="container" color="blue">
     <hr/>
         <div class="text-left left-block">
             <p class="txt-railway"><b>About</b></p> </div>
@@ -169,7 +170,9 @@ body{
 	            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
 		</div>
     <hr/>
-</div>
+</div> -->
+
+<jsp:include page="footer.jsp" />
 
 <br />
 
