@@ -61,7 +61,7 @@
 
 <body>
 
-<!-- <nav class="navbar navbar-inverse">
+ <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#"><img src="resources\images\img_flower.jpg" height="30" width="40"></a>
@@ -87,9 +87,9 @@
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
-</nav> -->
+</nav> 
 
-<jsp:include page="header.jsp" />
+ <%-- <jsp:include page="header.jsp" />  --%>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">

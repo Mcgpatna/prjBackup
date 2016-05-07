@@ -42,14 +42,14 @@
 </head>
 <body>
 <!-- myaddition for footer -->
-<div class="container">
+<div class="container"  style=color:#00aabb >
     <hr/>
         <div class="text-left left-block">
             <p class="txt-railway"><b>About</b> 
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="index">Home</a></p>
+            <a href="index"><b>Home </b></a></p>
          </div>
-         <div class="text-right Right-block">   
+         <div class="text-right Right-block" >   
             <br />
                 <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
 	            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>

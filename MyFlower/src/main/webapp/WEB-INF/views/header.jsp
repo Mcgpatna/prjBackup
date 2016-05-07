@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<%-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"> --%>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -50,10 +50,14 @@
  }
 </style>
   
-  
+  <script type="text/javascript">
+$(document).ready(function() {
+    $('dropdown-toggle').dropdown()
+});
+</script>
 </head>
 <body>
-<nav class="navbar navbar-inverse role="navigator">
+<nav class="navbar navbar-default role="navigator">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="index"><img src="resources\images\img_flower.jpg" height="30" width="40"></a>
@@ -62,8 +66,9 @@
       <li class="active"><a href="index">Home</a></li>
       
       <li class="dropdown">
+         
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">CONTENTS
-          <span class="caret"></span></a>
+           <span class="caret"></span></a> 
           <ul class="dropdown-menu">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Products</a></li>
