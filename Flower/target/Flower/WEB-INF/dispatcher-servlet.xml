@@ -32,6 +32,6 @@ xsi:schemaLocation="http://www.springframework.org/schema/mvc
                                 </property>
                 </bean>
                
-               <!--  <bean id="p" class="service.ProductService" />
-                <bean id="dao" class="dao.productDAOImpl" />   -->
+                <bean id="p" class="service.ProductService" />
+                <bean id="dao" class="dao.productDAOImpl" />   
 </beans>

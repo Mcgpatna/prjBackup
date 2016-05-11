@@ -63,7 +63,7 @@
  <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="resources\images\img_flower.jpg" height="30" width="40"></a>
+      <a class="navbar-brand" href="#"><img src="resources\images\logo.jpg" height="35" width="50"></a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
@@ -105,7 +105,8 @@
       <div class="item active">
         <img src="resources\images\1a.jpg" alt="Bitter Nutmeg is a tree up to 20 m tall" width="450" height="350">
         <div class="carousel-caption">
-          <h3>Flower</h3>
+          <h3><font face="arial,helvetica">Bitter Nutmeg is a tree up to 20 m tall, often with stilt roots. 
+Bark is brownish, warty, flaky; blaze reddish.</font></h3>
           
         </div>      
       </div>

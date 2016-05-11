@@ -60,7 +60,7 @@ $(document).ready(function() {
 <nav class="navbar navbar-default role="navigator">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index"><img src="resources\images\img_flower.jpg" height="30" width="40"></a>
+      <a class="navbar-brand" href="index"><img src="resources\images\logo.jpg" height="35" width="45"></a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index">Home</a></li>

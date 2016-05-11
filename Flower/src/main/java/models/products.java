@@ -3,6 +3,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.sql.Blob;
+import javax.persistence.Lob;
+//import javax.persistence.Column;
 
 @Entity
 public class products {
@@ -14,8 +20,11 @@ public class products {
 	String description;
 	String category;
 	float price;
+	//for picture upload 
 	String status;
-	
+	@Transient
+	MultipartFile  prdImage;
+	String pLocation;
 	
 	
 	/*public products(int id, String name, String description, String category,
@@ -97,6 +106,34 @@ public class products {
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	
+
+
+	
+
+
+	public MultipartFile getPrdImage() {
+		return prdImage;
+	}
+
+
+
+	public void setPrdImage(MultipartFile prdImage) {
+		this.prdImage = prdImage;
+	}
+	
+
+
+	public String getpLocation() {
+		return pLocation;
+	}
+
+
+
+	public void setpLocation(String pLocation) {
+		this.pLocation = pLocation;
 	}
 
 

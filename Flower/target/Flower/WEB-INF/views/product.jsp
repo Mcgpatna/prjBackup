@@ -13,6 +13,8 @@
     </style>
 </head>
 <body>
+
+
 <h1>
     Add a Product
 </h1>
@@ -39,7 +41,7 @@
        </tr>
               
     </c:if>
-    <c:if test="${empty products.name}">
+    <c:if test="${pcount>0}">
     	<tr>
         <td>
             <form:label path="id">
@@ -47,7 +49,10 @@
             </form:label>
         </td>
         <td>
-            <form:input path="id" readonly="true" size="8"  disabled="true" />
+        	 <%-- <c:set var=pctr value=${pcount}/>  --%>
+            <%-- <form:input path="id" value="<c:out value="${pctr}"/>" readonly="true" size="8"  disabled="true" /> --%>
+            
+            <form:input path="id"  readonly="true" size="8"  disabled="true" /> 
             <form:hidden path="id" />
         </td> 
        </tr>
@@ -107,12 +112,24 @@
         </td>
     </tr>
     <tr>
+        <td>
+            <form:label path="prdContent">
+                <spring:message text="Upload Product Image"/>
+            </form:label>
+        </td>
+        <td>
+            <form:input path="prdContent" type="file"  />
+        </td>
+        
+    </tr>
+    <tr>
         <td colspan="2">
        		 <c:if test="${empty products.id}">
                 <input type="submit"  value="<spring:message text="Add Product"/>" />
             </c:if>
             <c:if test="${!empty products.id}">
                 <input type="submit"  value="<spring:message text="Submit Product"/>" />
+                
             </c:if>
             
         </td>

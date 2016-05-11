@@ -29,7 +29,8 @@ public class productDAOImpl {//implements productDAO{
 		
 		Session session = this.sessionFactory.getCurrentSession();
 		session.persist(p);
-		System.out.println("Person saved successfully, Product Details="+p);
+		System.out.println("Product id is : "+p.getId());
+		System.out.println("Product saved successfully, Product Details="+p);
 			
 	}
 	
@@ -37,7 +38,7 @@ public class productDAOImpl {//implements productDAO{
 	{
         Session session = this.sessionFactory.getCurrentSession();
         session.update(p);
-        System.out.println("Person updated successfully, Product Details="+p);
+        System.out.println("Product updated successfully, Product Details="+p);
     }
 	public List<models.products> viewProduct()
 	{
@@ -59,7 +60,7 @@ public class productDAOImpl {//implements productDAO{
 		if(null != p){
 			session.delete(p);
 		}
-		System.out.println("Person deleted successfully, person details="+p);
+		System.out.println("Product deleted successfully, person details="+p);
 	}
 	public Long countProduct()
 	{
@@ -68,6 +69,6 @@ public class productDAOImpl {//implements productDAO{
 		System.out.println("No of products : " + count);
 		return count;
 	}
-
+	
 
 }
