@@ -16,7 +16,7 @@
 
 
 <h1>
-    Add a Product
+  <center>  Add a Product</center>
 </h1>
  
 <c:url var="addAction" value="/product/add" ></c:url>
@@ -49,10 +49,10 @@
             </form:label>
         </td>
         <td>
-        	 <%-- <c:set var=pctr value=${pcount}/>  --%>
+        	  
             <%-- <form:input path="id" value="<c:out value="${pctr}"/>" readonly="true" size="8"  disabled="true" /> --%>
             
-            <form:input path="id"  readonly="true" size="8"  disabled="true" /> 
+            <form:input path="id"  value="${pcount+1}" readonly="true" size="8"  disabled="true" /> 
             <form:hidden path="id" />
         </td> 
        </tr>
@@ -123,6 +123,7 @@
         
     </tr>
     <tr>
+     
         <td colspan="2">
        		 <c:if test="${empty products.id}">
                 <input type="submit"  value="<spring:message text="Add Product"/>" />

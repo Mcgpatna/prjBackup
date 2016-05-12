@@ -26,7 +26,7 @@ public class homeController {
 
 	@Autowired
 	ProductService p;
-	private static String UPLOAD_LOCATION="e:/mcg/flower1/";
+	private static String UPLOAD_LOCATION="E:/MCG-TTT/DT-PROJECT/Flower/src/main/webapp/resources/images/";
 	
 	//String message = "Welcome to Spring MVC!";
 	 
@@ -94,13 +94,15 @@ public class homeController {
             } 
             else
             {
+            int pcount=p.countProduct()+1;	
 			String str=p1.getPrdImage().getOriginalFilename();
 			System.out.println("Str = "+str);
 			int pos=str.indexOf(".");
 			System.out.println("pos = "+pos);
 			String str1=str.substring(pos);
 			System.out.println("Str1 = "+str1);
-			String str2=String.valueOf(p1.getId())+'a'+str1;
+			String str2=String.valueOf(pcount)+'a'+str1;
+			//String str2=String.valueOf(p1.getId())+'a'+str1;
 			System.out.println("Str2 = "+str2);
 			MultipartFile obj=p1.getPrdImage();
 			try{

@@ -41,7 +41,7 @@ public class ProductService {
     {
     	dao.removeProduct(id);
     }
-    public Long countProduct()
+    public Integer countProduct()
 	{
 		return dao.countProduct();
 	}

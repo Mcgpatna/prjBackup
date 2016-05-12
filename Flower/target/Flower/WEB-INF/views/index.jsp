@@ -103,7 +103,7 @@
     
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="resources\images\1a.jpg" alt="Bitter Nutmeg is a tree up to 20 m tall" width="450" height="350">
+        <img src="resources\images\1aa.jpg" alt="Bitter Nutmeg is a tree up to 20 m tall" width="450" height="350">
         <div class="carousel-caption">
           <h3><font face="arial,helvetica">Bitter Nutmeg is a tree up to 20 m tall, often with stilt roots. 
 Bark is brownish, warty, flaky; blaze reddish.</font></h3>
@@ -112,7 +112,7 @@ Bark is brownish, warty, flaky; blaze reddish.</font></h3>
       </div>
       
       <div class="item">
-        <img src="resources\images\2a.jpg" alt="Campbell's magnolia is a magnolia that grows in the forests of the Himalaya" width="480" height="350">
+        <img src="resources\images\2aa.jpg" alt="Campbell's magnolia is a magnolia that grows in the forests of the Himalaya" width="480" height="350">
         <div class="carousel-caption">
           <h3>Tulip</h3>
           
@@ -121,14 +121,14 @@ Bark is brownish, warty, flaky; blaze reddish.</font></h3>
       
       
       <div class="item">
-        <img src="resources\images\3a.jpg" alt="Cathcart's Magnolia is a trees up to 50 m tall" width="480" height="350">
+        <img src="resources\images\3aa.jpg" alt="Cathcart's Magnolia is a trees up to 50 m tall" width="480" height="350">
         <div class="carousel-caption">
           <h3>Yellow Flower</h3>
           
         </div>      
       </div> 
        <div class="item">
-        <img src="resources\images\4a.jpg" alt="Nilofar is an aquatic flowering plant found in Kashmir" width="480" height="350">
+        <img src="resources\images\4aa.jpg" alt="Nilofar is an aquatic flowering plant found in Kashmir" width="480" height="350">
         <div class="carousel-caption">
           <h3>Small Flower </h3>
          
@@ -152,9 +152,9 @@ Bark is brownish, warty, flaky; blaze reddish.</font></h3>
   <table class="table" align="center">
 
   <tr>
-    <td > <a href="productDetails"><img src="resources\images\5a.jpg" /> </a></td>
-    <td ><a href="productView"><img src="resources\images\6a.jpg" /></a></td>
-    <td ><a href="product"><img src="resources\images\7a.jpg" /></a></td>
+    <td > <a href="productDetails"><img src="resources\images\5aa.jpg" /> </a></td>
+    <td ><a href="productView"><img src="resources\images\6aa.jpg" /></a></td>
+    <td ><a href="product"><img src="resources\images\7aa.jpg" /></a></td>
   </tr>
 </table></div>
 </div>

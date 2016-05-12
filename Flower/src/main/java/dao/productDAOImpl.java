@@ -62,10 +62,10 @@ public class productDAOImpl {//implements productDAO{
 		}
 		System.out.println("Product deleted successfully, person details="+p);
 	}
-	public Long countProduct()
+	public Integer countProduct()
 	{
 		Session session = this.sessionFactory.getCurrentSession();
-		Long count = (Long) session.createQuery("select count(*) from  products").uniqueResult();
+		Integer count = (Integer) session.createQuery("select max(id) from  products").uniqueResult();
 		System.out.println("No of products : " + count);
 		return count;
 	}

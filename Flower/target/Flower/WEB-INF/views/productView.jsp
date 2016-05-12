@@ -77,7 +77,7 @@ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></scrip
             <td>${prd.category}</td>
             <td>${prd.price}</td>
             <td>${prd.status}</td>
-            <td><a href="details?${prd.id}">Details</a> </td>  
+            <td><a href="details${prd.id}">Details</a> </td>  
           </tr> 
            
         </c:forEach> 

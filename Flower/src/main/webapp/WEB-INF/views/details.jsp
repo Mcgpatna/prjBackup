@@ -1,32 +1,69 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<%@ page session="false" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="sec" 	uri="http://www.springframework.org/security/tags"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>Flower Maintenance Page</title>
-    <style type="text/css">
-        .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
-        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
-        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
-        .tg .tg-4eph{background-color:#f9f9f9}
-    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<%-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"> --%>
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" 
+href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+<script type="text/javascript" 
+src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" 
+src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<title>Individual Product's Details</title>
 </head>
 <body>
 
 
 <h1>
-    Details of a    Product 
+<center>    Details of a  Product  </center>
 </h1>
- 
- 
+<!-- header details --> 
 
+<nav class="navbar navbar-default role="navigator">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index"><img src="E:/MCG-TTT/DT-PROJECT/Flower/src/main/webapp/resources/images/img_flower.jpg" height="30" width="40"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/Flower/index">Home</a></li>
+      
+      <li class="dropdown">
+         
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">CONTENTS
+           <span class="caret"></span></a> 
+          <ul class="dropdown-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Category</a></li> 
+          </ul>
+        </li> 
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Category</a></li> 
+      <li><a href="#">Products</a></li> 
+    </ul>
+    
+  </div>
+</nav>
+ 
+<!-- end of header details -->
+<div class="container-fluid">
+<table width="100"  class="table table-striped table-bodered">
 
     
-<table border="2">
+
 <tr >
  <td rowspan=6>
-   Picture
+   <img src="${products.pLocation}"/>
  </td>
  <th> Product Id</th>
   <td> <c:out value="${products.id}"/></td>
@@ -49,10 +86,37 @@
 </tr>
 <tr>
  <th>Statuc</th>
- <td><c:out value="${products.statuc}"/></td>
+ <td><c:out value="${products.status}"/></td>
 </tr>
 
     
     
    
 </table>  
+</div>
+<br/><br/>
+<!-- my addition for footer -->
+<div class="container"  style=color:#00aabb >
+    <hr/>
+        <div class="text-left left-block">
+            <p class="txt-railway"><font face="vivaldi" size="10"><b>About</b></font> 
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Flower/index"><font face="vivaldi" size="10"><b>Home </b></font></a></p>
+         </div>
+         <div class="text-right Right-block" >   
+            <br />
+                <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	            <a href="https://plus.google.com"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	            <a href="mailto:chanda.madhu@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+		</div>
+    <hr/>
+</div>
+
+<br />
+
+
+<!--  end of my addition -->
+
+</body>
+</html>

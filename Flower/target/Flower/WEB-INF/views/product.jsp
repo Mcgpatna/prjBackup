@@ -16,12 +16,12 @@
 
 
 <h1>
-    Add a Product
+  <center>  Add a Product</center>
 </h1>
  
 <c:url var="addAction" value="/product/add" ></c:url>
  
-<form:form action="${addAction}" modelAttribute="products">
+<form:form action="${addAction}" modelAttribute="products"  enctype="multipart/form-data">
 <table>
     
     
@@ -113,12 +113,12 @@
     </tr>
     <tr>
         <td>
-            <form:label path="prdContent">
+            <form:label path="prdImage">
                 <spring:message text="Upload Product Image"/>
             </form:label>
         </td>
         <td>
-            <form:input path="prdContent" type="file"  />
+            <form:input path="prdImage" type="file"  />
         </td>
         
     </tr>
