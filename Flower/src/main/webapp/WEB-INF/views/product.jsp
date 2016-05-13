@@ -16,13 +16,13 @@
 
 
 <h1>
-  <center>  Add a Product</center>
+  <center><Font color="blue"> Maintenance of Flowers' Detail</Font></center>
 </h1>
  
 <c:url var="addAction" value="/product/add" ></c:url>
  
 <form:form action="${addAction}" modelAttribute="products"  enctype="multipart/form-data">
-<table>
+<table align="right">
     
     
     
@@ -135,10 +135,12 @@
             
         </td>
     </tr>
+    
 </table>  
 </form:form>
-<br>
-<h3>List of Flowers</h3>
+<br/>
+<br/><br/><br/><br/><br/><br/>
+<center><h3><font face="vivaldi" size="10" color="green" >List of Flowers</font></h3></center>
 <c:if test="${!empty listProduct}">
     <table class="tg">
     <tr>

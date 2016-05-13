@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
-	@RequestMapping(value = { "/", "/index**" }, method = RequestMethod.GET)
+	/*@RequestMapping(value = { "/", "/index**" }, method = RequestMethod.GET)
 	public ModelAndView defaultPage() {
 	  ModelAndView model = new ModelAndView();
 	  model.addObject("title", "Spring Security Login Form - Database Authentication");
@@ -21,9 +21,9 @@ public class MainController {
 	  model.setViewName("login");
 	  return model;
 
-	}
+	}*/
 
-	@RequestMapping(value = "/admin**", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/admin**", method = RequestMethod.GET)
 	public ModelAndView adminPage() {
 
 	  ModelAndView model = new ModelAndView();
@@ -32,7 +32,7 @@ public class MainController {
 	  model.setViewName("admin");
 	  return model;
 
-	}
+	}*/
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView login(@RequestParam(value = "error", required = false) String error,

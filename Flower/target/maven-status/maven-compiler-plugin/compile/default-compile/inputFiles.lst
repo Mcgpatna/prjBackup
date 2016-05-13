@@ -1,5 +1,8 @@
 E:\MCG-TTT\DT-PROJECT\Flower\src\main\java\models\products.java
+E:\MCG-TTT\DT-PROJECT\Flower\src\main\java\models\register.java
+E:\MCG-TTT\DT-PROJECT\Flower\src\main\java\dao\registerDAOImpl.java
 E:\MCG-TTT\DT-PROJECT\Flower\src\main\java\controllers\MainController.java
 E:\MCG-TTT\DT-PROJECT\Flower\src\main\java\controllers\homeController.java
 E:\MCG-TTT\DT-PROJECT\Flower\src\main\java\dao\productDAOImpl.java
+E:\MCG-TTT\DT-PROJECT\Flower\src\main\java\service\RegisterService.java
 E:\MCG-TTT\DT-PROJECT\Flower\src\main\java\service\ProductService.java

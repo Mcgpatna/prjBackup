@@ -1,0 +1,23 @@
+create table register
+(
+	id int IDENTITY(1,1),
+	username varchar(50) unique,
+	password varchar(50) not null,
+	conf_pass varchar(50) not null,
+	address varchar(100) not null,
+	email varchar(50) not null,
+	mobileno varchar(12) not null,
+	role varchar(15) default 'ROLE_USER'
+       
+)
+
+insert into register(username,password,conf_pass,address,email,mobileno,role)
+       values('madhu','1234','1234','patna','mcg_patna@yahoo.com','9431019365','ROLE_ADMIN')
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   

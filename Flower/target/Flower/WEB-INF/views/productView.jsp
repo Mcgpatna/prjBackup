@@ -25,12 +25,12 @@ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></scrip
 </head>
 
 <body>
-<sec:authorize access="hasRole('ROLE_ADMIN')">
+<%-- <sec:authorize access="hasRole('ROLE_ADMIN','ROLE_USER')"> --%>
  <%-- <jsp:include page="header.jsp" /> --%> 
 <nav class="navbar navbar-default role="navigator">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index"><img src="resources\images\img_flower.jpg" height="30" width="40"></a>
+      <a class="navbar-brand" href="index"><img src="resources\images\logo.jpg" height="40" width="40"></a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index">Home</a></li>
@@ -77,7 +77,7 @@ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></scrip
             <td>${prd.category}</td>
             <td>${prd.price}</td>
             <td>${prd.status}</td>
-            <td><a href="details${prd.id}">Details</a> </td>  
+            <td><a href="details/${prd.id}">Details</a> </td>  
           </tr> 
            
         </c:forEach> 
@@ -91,6 +91,6 @@ $(document).ready(function(){
 });
 </script>
 <jsp:include page="footer.jsp" />
-</sec:authorize>
+<%-- </sec:authorize> --%>
 </body>
 </html>

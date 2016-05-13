@@ -71,13 +71,13 @@ $(document).ready(function() {
            <span class="caret"></span></a> 
           <ul class="dropdown-menu">
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="productView">Products</a></li>
             <li><a href="#">Category</a></li> 
           </ul>
         </li> 
       <li><a href="#">About Us</a></li>
       <li><a href="#">Category</a></li> 
-      <li><a href="#">Products</a></li> 
+      <li><a href="productView">Products</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="signup"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>

@@ -73,17 +73,17 @@
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="productView">Products</a></li>
             <li><a href="#">Category</a></li> 
           </ul>
         </li> 
       <li><a href="#">About Us</a></li>
       <li><a href="#">Category</a></li> 
-      <li><a href="#">Products</a></li> 
+      <li><a href="productView">Products</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="signup"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav> 
@@ -114,7 +114,8 @@ Bark is brownish, warty, flaky; blaze reddish.</font></h3>
       <div class="item">
         <img src="resources\images\2aa.jpg" alt="Campbell's magnolia is a magnolia that grows in the forests of the Himalaya" width="480" height="350">
         <div class="carousel-caption">
-          <h3>Tulip</h3>
+          <h3>Tulip Tree Is a deciduous tree native to North America, 
+that can grow to heights of over 30 m with trunk diameters of 4-6 ft.</h3>
           
         </div>      
       </div>
@@ -123,14 +124,14 @@ Bark is brownish, warty, flaky; blaze reddish.</font></h3>
       <div class="item">
         <img src="resources\images\3aa.jpg" alt="Cathcart's Magnolia is a trees up to 50 m tall" width="480" height="350">
         <div class="carousel-caption">
-          <h3>Yellow Flower</h3>
+          <h3>Cathcart's Magnolia is a trees up to 50 m tall" width="480" height="350"</h3>
           
         </div>      
       </div> 
        <div class="item">
         <img src="resources\images\4aa.jpg" alt="Nilofar is an aquatic flowering plant found in Kashmir" width="480" height="350">
         <div class="carousel-caption">
-          <h3>Small Flower </h3>
+          <h3>Nilofar is an aquatic flowering plant found in Kashmir" width="480" height="350"</h3>
          
         </div>      
       </div>

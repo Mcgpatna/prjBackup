@@ -20,12 +20,18 @@ import java.io.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import service.ProductService;
 import models.products;
+import models.register;
+import service.RegisterService;
 
 @Controller
 public class homeController {
 
 	@Autowired
 	ProductService p;
+	
+	@Autowired
+	RegisterService r;
+	
 	private static String UPLOAD_LOCATION="E:/MCG-TTT/DT-PROJECT/Flower/src/main/webapp/resources/images/";
 	
 	//String message = "Welcome to Spring MVC!";
@@ -46,10 +52,22 @@ public class homeController {
 		return "index";
 	}
 	
-	@RequestMapping("/signup")
-	public String showSignUp()
+	//@RequestMapping("/signup")
+	@RequestMapping(value = "/signup")
+	public String showSignUp(Model model)
 	{
+		model.addAttribute("register", new register());
+		System.out.println("inside showSignup(); ...");
 		return "signup";
+	}
+	
+	@RequestMapping(value="/logins", method = RequestMethod.POST)
+	public String addRegister(@ModelAttribute("register") register r1, Model model)
+	{
+		r.addRegister(r1);
+		System.out.println("inside addRegister(); ...");
+		return "redirect:/index";
+		
 	}
 	@RequestMapping("/productDetails")
 	public String showProduct()
@@ -79,9 +97,7 @@ public class homeController {
 		return "product";
 	}
 
-	
-	
-	
+		
 	
 	@RequestMapping(value= "/product/add", method = RequestMethod.POST)
 	public String addProduct(@ModelAttribute("products") products p1, Model model,Errors errors){

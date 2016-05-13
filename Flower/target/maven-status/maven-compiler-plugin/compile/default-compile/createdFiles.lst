@@ -1,5 +1,8 @@
-service\ProductService.class
+service\RegisterService.class
 models\products.class
 dao\productDAOImpl.class
-controllers\homeController.class
 controllers\MainController.class
+service\ProductService.class
+dao\registerDAOImpl.class
+models\register.class
+controllers\homeController.class

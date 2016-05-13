@@ -1,5 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,7 +10,7 @@
 
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -85,8 +87,7 @@ body{
       <li><a href="#">Page 3</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right">
-       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav> -->
@@ -99,51 +100,87 @@ body{
 			    		<h3 class="panel-title">Please sign up for Registration</h3>
 			 			</div>
 			 			<div class="panel-body">
-			    		<form role="form">
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			                <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    				<div class="form-group">
-			    				 <input type="text" name="address" id="address" class="form-control input-sm" placeholder="Address">
-			    			    </div> </div>
-			    			    <div class="col-xs-6 col-sm-6 col-md-6">
-			    				<div class="form-group">
-			    				 <input type="text" name="mobileno" id="mobileno" class="form-control input-sm" placeholder="Mobile No">
-			    			    </div> </div>
-			    			
-			    			</div>
-			    			<div class="form-group">
-			    				<input type="text" name="login" id="login" class="form-control input-sm" placeholder="Login Name">
-			    			</div>
-			    			
-			    			<div class="form-group">
-			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
-			    			</div>
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
-			    					</div>
-			    				</div>
-			    			</div>
-			    			
-			    			<input type="submit" value="Register" class="btn btn-info btn-block">
-			    		
-			    		</form>
+			<!--  <c:url var="addAction" value="logins" ></c:url> -->
+  			<form:form method="POST" action="logins" modelAttribute="register" enctype="multipart/form-data"> 
+			    		<%-- <form role="form"> --%>
+			   <table align="center">
+			    	
+           			<form:hidden path="id" />	
+			    	<tr>
+			    		<td>
+            				<form:label path="username">
+               					<spring:message text="Login Name"/>
+            				</form:label>
+        				</td>
+        				<td>
+            				<form:input path="username" />
+        				</td> 
+			    	</tr>
+			    	<tr>
+			    		<td>
+            				<form:label path="password">
+                				<spring:message text="Password"/>
+           					</form:label>
+        				</td>
+       					 <td>
+           					<form:input path="password" />
+       					 </td>
+			    	</tr>
+			    	<tr>
+			    		<td>
+            				<form:label path="conf_pass">
+                				<spring:message text="Confirm Password"/>
+           					</form:label>
+        				</td>
+       					 <td>
+           					<form:input path="conf_pass" />
+       					 </td>
+			    	</tr>
+			    	<tr>
+			    		<td>
+            				<form:label path="address">
+                				<spring:message text="Address"/>
+           					</form:label>
+        				</td>
+       					 <td>
+           					<form:input path="address" />
+       					 </td>
+			    	</tr>
+			    	<tr>
+			    		<td>
+            				<form:label path="email">
+                				<spring:message text="Email Id"/>
+           					</form:label>
+        				</td>
+       					 <td>
+           					<form:input path="email" />
+       					 </td>
+			    	</tr>
+			    	<tr>
+			    		<td>
+            				<form:label path="mobileno">
+                				<spring:message text="Mobile No"/>
+           					</form:label>
+        				</td>
+       					 <td>
+           					<form:input path="mobileno" />
+       					 </td>
+			    	</tr>
+			    	<tr>
+			    		<td>
+			    			<%-- <form:input path="role" value="ROLE_USER"/> --%>
+			    			<form:hidden path="role" value="ROLE_USER"/>
+			    		</td>
+			    	</tr>
+			    	 <tr>
+     
+        				<td colspan="2">
+       		 			
+                			<input type="submit"  value="<spring:message text="Register Your Details"/>" />
+            			 </td>
+    				</tr>
+			    </table>		
+			    		</form:form>
 			    	</div>
 	    		</div>
     		</div>

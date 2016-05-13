@@ -22,7 +22,7 @@
 <c:url var="addAction" value="/product/add" ></c:url>
  
 <form:form action="${addAction}" modelAttribute="products"  enctype="multipart/form-data">
-<table>
+<table align="right">
     
     
     
@@ -49,10 +49,10 @@
             </form:label>
         </td>
         <td>
-        	 <%-- <c:set var=pctr value=${pcount}/>  --%>
+        	  
             <%-- <form:input path="id" value="<c:out value="${pctr}"/>" readonly="true" size="8"  disabled="true" /> --%>
             
-            <form:input path="id"  readonly="true" size="8"  disabled="true" /> 
+            <form:input path="id"  value="${pcount+1}" readonly="true" size="8"  disabled="true" /> 
             <form:hidden path="id" />
         </td> 
        </tr>
@@ -123,6 +123,7 @@
         
     </tr>
     <tr>
+     
         <td colspan="2">
        		 <c:if test="${empty products.id}">
                 <input type="submit"  value="<spring:message text="Add Product"/>" />
@@ -134,10 +135,12 @@
             
         </td>
     </tr>
+    
 </table>  
 </form:form>
-<br>
-<h3>List of Flowers</h3>
+<br/>
+<br/><br/><br/><br/><br/><br/>
+<center><h3><font face="vivaldi" size="10" color="green" >List of Flowers</font></h3></center>
 <c:if test="${!empty listProduct}">
     <table class="tg">
     <tr>

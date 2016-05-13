@@ -27,12 +27,12 @@ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></scrip
 <h1>
 <center>    Details of a  Product  </center>
 </h1>
-<!-- header details --> 
+<!-- header details E:/MCG-TTT/DT-PROJECT/Flower/src/main/webapp/resources/images/img_flower.jpg--> 
 
 <nav class="navbar navbar-default role="navigator">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index"><img src="E:/MCG-TTT/DT-PROJECT/Flower/src/main/webapp/resources/images/img_flower.jpg" height="30" width="40"></a>
+      <a class="navbar-brand" href="index"><img src="E:/MCG-TTT/DT-PROJECT/Flower/src/main/webapp/resources/images/logo.jpg" height="30" width="40"></a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/Flower/index">Home</a></li>
@@ -43,13 +43,13 @@ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></scrip
            <span class="caret"></span></a> 
           <ul class="dropdown-menu">
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="/Flower/productView">Products</a></li>
             <li><a href="#">Category</a></li> 
           </ul>
         </li> 
       <li><a href="#">About Us</a></li>
       <li><a href="#">Category</a></li> 
-      <li><a href="#">Products</a></li> 
+      <li><a href="/Flower/productView">Products</a></li> 
     </ul>
     
   </div>
